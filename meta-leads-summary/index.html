@@ -45,7 +45,22 @@
     .issue-title { font-weight:900; color:var(--blue); font-size:18px; }
     .pill { display:inline-block; padding:5px 10px; border-radius:3px; background:var(--teal-soft); color:var(--teal); font-weight:900; }
     .warning { background:var(--red-soft); color:var(--red); }
-    @media (max-width:900px) { .meta-grid,.kpi-grid,.scope,.project-grid { grid-template-columns:1fr; } .project-stats { grid-template-columns:1fr; } h1 { font-size:38px; } main { padding:24px 18px 56px; } table { display:block; overflow-x:auto; white-space:nowrap; } }
+    @media (max-width:900px) {
+      .meta-grid,.kpi-grid,.scope,.project-grid { grid-template-columns:1fr; }
+      .project-stats { grid-template-columns:1fr; }
+      h1 { font-size:38px; }
+      main { padding:24px 18px 56px; }
+      table, thead, tbody, tr, th, td { display:block; width:100%; }
+      table { border:0; background:transparent; }
+      thead { display:none; }
+      tbody { display:grid; gap:12px; }
+      tr { border:1px solid var(--line); border-radius:4px; background:#fff; padding:8px 12px; }
+      td { border-bottom:1px solid var(--line); display:flex; justify-content:space-between; gap:16px; padding:10px 0; text-align:left; direction:ltr; }
+      td::before { content:attr(data-label); color:var(--muted); font-weight:800; text-align:right; direction:rtl; }
+      td:last-child { border-bottom:0; }
+      td.issue-title { display:block; text-align:right; direction:rtl; font-size:21px; padding-bottom:12px; }
+      td.issue-title::before { content:""; display:none; }
+    }
   </style>
 </head>
 <body>
@@ -178,60 +193,60 @@
       <thead><tr><th>المشروع</th><th>إجمالي الليدز في ملف Meta</th><th>أرقام جوال صحيحة وفريدة</th><th>ليدز برقم جوال صحيح</th><th>أرقام تحتاج تدقيق</th><th>أرقام غير موجودة</th></tr></thead>
       <tbody>
           <tr>
-            <td class="issue-title">دارة مكة</td>
-            <td>112</td>
-            <td>110</td>
-            <td>110</td>
-            <td>2</td>
-            <td>0</td>
+            <td class="issue-title" data-label="المشروع">دارة مكة</td>
+            <td data-label="إجمالي الليدز في ملف Meta">112</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">110</td>
+            <td data-label="ليدز برقم جوال صحيح">110</td>
+            <td data-label="أرقام تحتاج تدقيق">2</td>
+            <td data-label="أرقام غير موجودة">0</td>
           </tr>
           <tr>
-            <td class="issue-title">رسين ريجان</td>
-            <td>112</td>
-            <td>72</td>
-            <td>72</td>
-            <td>40</td>
-            <td>0</td>
+            <td class="issue-title" data-label="المشروع">رسين ريجان</td>
+            <td data-label="إجمالي الليدز في ملف Meta">112</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">72</td>
+            <td data-label="ليدز برقم جوال صحيح">72</td>
+            <td data-label="أرقام تحتاج تدقيق">40</td>
+            <td data-label="أرقام غير موجودة">0</td>
           </tr>
           <tr>
-            <td class="issue-title">دارة الوجهة</td>
-            <td>107</td>
-            <td>100</td>
-            <td>100</td>
-            <td>6</td>
-            <td>1</td>
+            <td class="issue-title" data-label="المشروع">دارة الوجهة</td>
+            <td data-label="إجمالي الليدز في ملف Meta">107</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">100</td>
+            <td data-label="ليدز برقم جوال صحيح">100</td>
+            <td data-label="أرقام تحتاج تدقيق">6</td>
+            <td data-label="أرقام غير موجودة">1</td>
           </tr>
           <tr>
-            <td class="issue-title">دارة الفرسان</td>
-            <td>77</td>
-            <td>49</td>
-            <td>49</td>
-            <td>25</td>
-            <td>3</td>
+            <td class="issue-title" data-label="المشروع">دارة الفرسان</td>
+            <td data-label="إجمالي الليدز في ملف Meta">77</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">49</td>
+            <td data-label="ليدز برقم جوال صحيح">49</td>
+            <td data-label="أرقام تحتاج تدقيق">25</td>
+            <td data-label="أرقام غير موجودة">3</td>
           </tr>
           <tr>
-            <td class="issue-title">رسين سدرة</td>
-            <td>74</td>
-            <td>64</td>
-            <td>64</td>
-            <td>8</td>
-            <td>2</td>
+            <td class="issue-title" data-label="المشروع">رسين سدرة</td>
+            <td data-label="إجمالي الليدز في ملف Meta">74</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">64</td>
+            <td data-label="ليدز برقم جوال صحيح">64</td>
+            <td data-label="أرقام تحتاج تدقيق">8</td>
+            <td data-label="أرقام غير موجودة">2</td>
           </tr>
           <tr>
-            <td class="issue-title">رسين خزام</td>
-            <td>64</td>
-            <td>55</td>
-            <td>55</td>
-            <td>8</td>
-            <td>1</td>
+            <td class="issue-title" data-label="المشروع">رسين خزام</td>
+            <td data-label="إجمالي الليدز في ملف Meta">64</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">55</td>
+            <td data-label="ليدز برقم جوال صحيح">55</td>
+            <td data-label="أرقام تحتاج تدقيق">8</td>
+            <td data-label="أرقام غير موجودة">1</td>
           </tr>
           <tr>
-            <td class="issue-title">دارة سدايم</td>
-            <td>21</td>
-            <td>11</td>
-            <td>11</td>
-            <td>9</td>
-            <td>1</td>
+            <td class="issue-title" data-label="المشروع">دارة سدايم</td>
+            <td data-label="إجمالي الليدز في ملف Meta">21</td>
+            <td data-label="أرقام جوال صحيحة وفريدة">11</td>
+            <td data-label="ليدز برقم جوال صحيح">11</td>
+            <td data-label="أرقام تحتاج تدقيق">9</td>
+            <td data-label="أرقام غير موجودة">1</td>
           </tr>
       </tbody>
     </table>
