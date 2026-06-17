@@ -20,7 +20,7 @@
     p { margin:0 0 12px; }
     .subtitle { max-width:930px; color:var(--muted); font-size:21px; }
     .callout { margin-top:24px; padding:20px 22px; border-right:6px solid var(--gold); background:var(--gold-soft); border-radius:4px; font-size:21px; line-height:1.65; }
-    .meta-grid,.kpi-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:24px 0; }
+    .meta-grid,.kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin:24px 0; }
     .card,.section,.project-card { border:1px solid var(--line); border-radius:4px; background:#fff; }
     .card { padding:17px; }
     .value { display:block; margin-top:6px; font-size:30px; line-height:1.2; font-weight:900; }
@@ -74,7 +74,7 @@
     <div class="brandbar"><img src="brand/TMD-logo-dark.svg" alt="TMD"><div class="eyebrow">أجدان × TMD</div></div>
     <h1>ملخص ليدز Snapchat من 4 حتى 16 يونيو 2026</h1>
     <p class="subtitle">هذا التقرير يلخص ليدز حملات Snapchat الواردة في <a href="https://drive.google.com/drive/folders/1x82Eq_dgSsbMptrdlQ4e94FQdFreTopM?usp=sharing" target="_blank" rel="noopener">ملفات Excel السبعة</a> الخاصة بالمشاريع، مع قراءة مختصرة لجودة البيانات والتوزيع حسب المشروع. التقرير لا يشمل Meta أو تيك توك أو X أو Google.</p>
-    <div class="callout"><strong>الخلاصة:</strong> تم توثيق 1,943 ليد من Snapchat داخل <a href="https://drive.google.com/drive/folders/1x82Eq_dgSsbMptrdlQ4e94FQdFreTopM?usp=sharing" target="_blank" rel="noopener">الحزمة الحالية</a>. بعد مراجعة أرقام الهاتف، يوجد 1,647 رقم صالح فريد يمكن التعامل معه كمؤشر عملي على حجم الليدز القابلة للمتابعة، مع وجود 68 سجلًا يحتاج مراجعة رقم هاتف قبل التسليم أو المطابقة النهائية.</div>
+    <div class="callout"><strong>الخلاصة:</strong> تم توثيق 1,943 ليد من Snapchat داخل <a href="https://drive.google.com/drive/folders/1x82Eq_dgSsbMptrdlQ4e94FQdFreTopM?usp=sharing" target="_blank" rel="noopener">الحزمة الحالية</a>. بعد مراجعة أرقام الهاتف، يوجد 1,647 رقم صالح فريد. الفرق بين الإجمالي والرقم الصالح الفريد يتكوّن من 228 سجلًا مكررًا داخل الأرقام الصحيحة، و68 سجلًا يحتاج مراجعة رقم هاتف قبل التسليم أو المطابقة النهائية.</div>
     <nav class="report-nav" aria-label="روابط التقارير">
       <a class="active" href="../snapchat-leads-summary/">تقرير Snapchat</a>
       <a href="../meta-leads-summary/">تقرير Meta</a>
@@ -85,6 +85,7 @@
   <section class="meta-grid" aria-label="مؤشرات عامة">
     <div class="card"><span class="label">إجمالي ليدز Snapchat في <a href="https://drive.google.com/drive/folders/1x82Eq_dgSsbMptrdlQ4e94FQdFreTopM?usp=sharing" target="_blank" rel="noopener">الملفات</a></span><strong class="value blue">1,943</strong></div>
     <div class="card"><span class="label">أرقام صالحة وفريدة</span><strong class="value teal">1,647</strong></div>
+    <div class="card"><span class="label">تكرار داخل الأرقام الصحيحة</span><strong class="value">228</strong></div>
     <div class="card"><span class="label">سجلات تحتاج مراجعة هاتف</span><strong class="value red">68</strong></div>
     <div class="card"><span class="label">الفترة داخل <a href="https://drive.google.com/drive/folders/1x82Eq_dgSsbMptrdlQ4e94FQdFreTopM?usp=sharing" target="_blank" rel="noopener">الحزمة</a></span><strong class="value">4 يونيو - 16 يونيو 2026</strong></div>
   </section>
