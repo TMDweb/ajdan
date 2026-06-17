@@ -31,6 +31,9 @@
     .note-list li { margin:8px 0; }
     a { color:var(--blue); font-weight:800; text-decoration-thickness:1px; text-underline-offset:4px; }
     th a { color:#fff; }
+    .report-nav { display:flex; gap:10px; flex-wrap:wrap; margin:22px 0 0; }
+    .report-nav a { border:1px solid var(--line); border-radius:4px; padding:8px 12px; background:#fff; text-decoration:none; }
+    .report-nav a.active { background:var(--blue); color:#fff; }
     .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:16px; }
     .project-card { padding:18px; }
     .project-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:14px 0; color:var(--muted); }
@@ -72,6 +75,10 @@
     <h1>ملخص ليدز Meta من 4 حتى 16 يونيو 2026</h1>
     <p class="subtitle">هذا التقرير يلخص ليدز حملات Meta الواردة في <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">ملفات Excel السبعة</a> الخاصة بالمشاريع، مع قراءة مختصرة لجودة البيانات والتوزيع حسب المشروع. التقرير لا يشمل سناب شات أو تيك توك أو X أو Google.</p>
     <div class="callout"><strong>الخلاصة:</strong> تم توثيق 558 ليد من Meta داخل الحزمة الحالية. بعد مراجعة أرقام الهاتف، يوجد 440 رقم صالح فريد يمكن التعامل معه كمؤشر عملي على حجم الليدز القابلة للمتابعة، مع وجود 104 سجلات تحتاج مراجعة رقم هاتف قبل التسليم أو المطابقة النهائية.</div>
+    <nav class="report-nav" aria-label="روابط التقارير">
+      <a class="active" href="../meta-leads-summary/">تقرير Meta</a>
+      <a href="../snapchat-leads-summary/">تقرير Snapchat</a>
+    </nav>
   </header>
 
   <section class="meta-grid" aria-label="مؤشرات عامة">
