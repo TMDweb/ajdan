@@ -29,6 +29,8 @@
     .scope { display:grid; grid-template-columns:1.1fr .9fr; gap:18px; align-items:start; }
     .note-list { margin:10px 0 0; padding:0 22px 0 0; }
     .note-list li { margin:8px 0; }
+    a { color:var(--blue); font-weight:800; text-decoration-thickness:1px; text-underline-offset:4px; }
+    th a { color:#fff; }
     .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:16px; }
     .project-card { padding:18px; }
     .project-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:14px 0; color:var(--muted); }
@@ -68,23 +70,23 @@
   <header>
     <div class="brandbar"><img src="brand/TMD-logo-dark.svg" alt="TMD"><div class="eyebrow">أجدان × TMD</div></div>
     <h1>ملخص ليدز Meta من 4 حتى 16 يونيو 2026</h1>
-    <p class="subtitle">هذا التقرير يلخص ليدز حملات Meta الواردة في ملفات Excel السبعة الخاصة بالمشاريع، مع قراءة مختصرة لجودة البيانات والتوزيع حسب المشروع. التقرير لا يشمل سناب شات أو تيك توك أو X أو Google.</p>
+    <p class="subtitle">هذا التقرير يلخص ليدز حملات Meta الواردة في <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">ملفات Excel السبعة</a> الخاصة بالمشاريع، مع قراءة مختصرة لجودة البيانات والتوزيع حسب المشروع. التقرير لا يشمل سناب شات أو تيك توك أو X أو Google.</p>
     <div class="callout"><strong>الخلاصة:</strong> تم توثيق 558 ليد من Meta داخل الحزمة الحالية. بعد مراجعة أرقام الهاتف، يوجد 440 رقم صالح فريد يمكن التعامل معه كمؤشر عملي على حجم الليدز القابلة للمتابعة، مع وجود 104 سجلات تحتاج مراجعة رقم هاتف قبل التسليم أو المطابقة النهائية.</div>
   </header>
 
   <section class="meta-grid" aria-label="مؤشرات عامة">
-    <div class="card"><span class="label">إجمالي ليدز Meta في الملفات</span><strong class="value blue">558</strong></div>
+    <div class="card"><span class="label">إجمالي ليدز Meta في <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">الملفات</a></span><strong class="value blue">558</strong></div>
     <div class="card"><span class="label">أرقام صالحة وفريدة</span><strong class="value teal">440</strong></div>
     <div class="card"><span class="label">سجلات تحتاج مراجعة هاتف</span><strong class="value red">104</strong></div>
-    <div class="card"><span class="label">الفترة داخل الملفات</span><strong class="value">4 يونيو - 16 يونيو 2026</strong></div>
+    <div class="card"><span class="label">الفترة داخل الحزمة</span><strong class="value">4 يونيو - 16 يونيو 2026</strong></div>
   </section>
 
   <section class="section scope">
     <div>
       <h2>نطاق التقرير</h2>
-      <p>الملفات المستخدمة هنا هي ملفات ليدز Meta فقط، وعددها سبعة ملفات: ملف لكل مشروع. لذلك لا يتم استخدام هذه الأرقام للحكم على إجمالي الحملة عبر كل المنصات، بل لفهم ما وصل من Meta وجودة بياناته حتى تاريخ إعداد الحزمة.</p>
+      <p><a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">هذه الحزمة</a> مخصصة لليدز Meta فقط، وتضم <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">سبعة ملفات</a>: واحد لكل مشروع. لذلك لا يتم استخدام هذه الأرقام للحكم على إجمالي الحملة عبر كل المنصات، بل لفهم ما وصل من Meta وجودة بياناته حتى تاريخ إعداد الحزمة.</p>
       <ul class="note-list">
-        <li>منصة الملفات: Meta، ويظهر حقل المنصة داخل الملفات باسم Instagram.</li>
+        <li>مصدر البيانات: Meta، ويظهر حقل المنصة باسم Instagram.</li>
         <li>المشاريع المغطاة: دارة مكة، رسين ريجان، دارة الوجهة، دارة الفرسان، رسين سدرة، رسين خزام، دارة سدايم.</li>
         <li>أي مقارنة مع سناب شات أو تيك توك أو X تحتاج ملفًا موحدًا منفصلًا لكل منصة.</li>
       </ul>
@@ -97,7 +99,7 @@
 
   <section class="section">
     <h2>التوزيع حسب المشروع</h2>
-    <p>الأرقام التالية مجمعة من ملفات المشاريع.</p>
+    <p>الأرقام التالية مجمعة من <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">ملفات المشاريع</a>.</p>
     <div class="project-grid">
       <article class="project-card">
         <div>
@@ -188,13 +190,13 @@
 
   <section class="section">
     <h2>جدول جودة البيانات</h2>
-    <p>أساس التصنيف: الرقم الصحيح هو رقم جوال سعودي بصيغة قابلة للتواصل تبدأ بـ 9665 بعد تنظيف المسافات والرموز. الرقم الفريد يعني احتساب الرقم مرة واحدة حتى لو تكرر في أكثر من سجل داخل الملفات.</p>
+    <p>أساس التصنيف: الرقم الصحيح هو رقم جوال سعودي بصيغة قابلة للتواصل تبدأ بـ 9665 بعد تنظيف المسافات والرموز. الرقم الفريد يعني احتساب الرقم مرة واحدة حتى لو تكرر في أكثر من سجل داخل <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">الملفات</a>.</p>
     <table>
-      <thead><tr><th>المشروع</th><th>إجمالي الليدز في ملف Meta</th><th>أرقام جوال صحيحة وفريدة</th><th>ليدز برقم جوال صحيح</th><th>أرقام تحتاج تدقيق</th><th>أرقام غير موجودة</th></tr></thead>
+      <thead><tr><th>المشروع</th><th>إجمالي الليدز في <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">ملف Meta</a></th><th>أرقام جوال صحيحة وفريدة</th><th>ليدز برقم جوال صحيح</th><th>أرقام تحتاج تدقيق</th><th>أرقام غير موجودة</th></tr></thead>
       <tbody>
           <tr>
             <td class="issue-title" data-label="المشروع">دارة مكة</td>
-            <td data-label="إجمالي الليدز في ملف Meta">111</td>
+            <td data-label="إجمالي الليدز">111</td>
             <td data-label="أرقام جوال صحيحة وفريدة">109</td>
             <td data-label="ليدز برقم جوال صحيح">109</td>
             <td data-label="أرقام تحتاج تدقيق">2</td>
@@ -202,7 +204,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">رسين ريجان</td>
-            <td data-label="إجمالي الليدز في ملف Meta">110</td>
+            <td data-label="إجمالي الليدز">110</td>
             <td data-label="أرقام جوال صحيحة وفريدة">71</td>
             <td data-label="ليدز برقم جوال صحيح">71</td>
             <td data-label="أرقام تحتاج تدقيق">39</td>
@@ -210,7 +212,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">دارة الوجهة</td>
-            <td data-label="إجمالي الليدز في ملف Meta">104</td>
+            <td data-label="إجمالي الليدز">104</td>
             <td data-label="أرقام جوال صحيحة وفريدة">97</td>
             <td data-label="ليدز برقم جوال صحيح">97</td>
             <td data-label="أرقام تحتاج تدقيق">6</td>
@@ -218,7 +220,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">دارة الفرسان</td>
-            <td data-label="إجمالي الليدز في ملف Meta">77</td>
+            <td data-label="إجمالي الليدز">77</td>
             <td data-label="أرقام جوال صحيحة وفريدة">49</td>
             <td data-label="ليدز برقم جوال صحيح">49</td>
             <td data-label="أرقام تحتاج تدقيق">25</td>
@@ -226,7 +228,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">رسين سدرة</td>
-            <td data-label="إجمالي الليدز في ملف Meta">73</td>
+            <td data-label="إجمالي الليدز">73</td>
             <td data-label="أرقام جوال صحيحة وفريدة">63</td>
             <td data-label="ليدز برقم جوال صحيح">63</td>
             <td data-label="أرقام تحتاج تدقيق">8</td>
@@ -234,7 +236,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">رسين خزام</td>
-            <td data-label="إجمالي الليدز في ملف Meta">63</td>
+            <td data-label="إجمالي الليدز">63</td>
             <td data-label="أرقام جوال صحيحة وفريدة">54</td>
             <td data-label="ليدز برقم جوال صحيح">54</td>
             <td data-label="أرقام تحتاج تدقيق">8</td>
@@ -242,7 +244,7 @@
           </tr>
           <tr>
             <td class="issue-title" data-label="المشروع">دارة سدايم</td>
-            <td data-label="إجمالي الليدز في ملف Meta">20</td>
+            <td data-label="إجمالي الليدز">20</td>
             <td data-label="أرقام جوال صحيحة وفريدة">11</td>
             <td data-label="ليدز برقم جوال صحيح">11</td>
             <td data-label="أرقام تحتاج تدقيق">8</td>
@@ -254,7 +256,7 @@
 
   <section class="section">
     <h2>الزخم اليومي داخل Meta</h2>
-    <p>يعرض الرسم التالي عدد الصفوف حسب تاريخ التسجيل الموجود في ملفات Meta خلال الفترة من 4 حتى 16 يونيو 2026.</p>
+    <p>يعرض الرسم التالي عدد الصفوف حسب تاريخ التسجيل الموجود في <a href="https://drive.google.com/drive/folders/19mlp5ZAegDwgYfFWLbaRk1ENGFt65lAm?usp=drive_link" target="_blank" rel="noopener">ملفات Meta</a> خلال الفترة من 4 حتى 16 يونيو 2026.</p>
     <div class="bar-row"><span>04 Jun</span><div class="bar"><i style="width:6.4%"></i></div><strong>5</strong></div><div class="bar-row"><span>06 Jun</span><div class="bar"><i style="width:16.7%"></i></div><strong>13</strong></div><div class="bar-row"><span>07 Jun</span><div class="bar"><i style="width:60.3%"></i></div><strong>47</strong></div><div class="bar-row"><span>08 Jun</span><div class="bar"><i style="width:51.3%"></i></div><strong>40</strong></div><div class="bar-row"><span>09 Jun</span><div class="bar"><i style="width:57.7%"></i></div><strong>45</strong></div><div class="bar-row"><span>10 Jun</span><div class="bar"><i style="width:44.9%"></i></div><strong>35</strong></div><div class="bar-row"><span>11 Jun</span><div class="bar"><i style="width:84.6%"></i></div><strong>66</strong></div><div class="bar-row"><span>12 Jun</span><div class="bar"><i style="width:76.9%"></i></div><strong>60</strong></div><div class="bar-row"><span>13 Jun</span><div class="bar"><i style="width:100.0%"></i></div><strong>78</strong></div><div class="bar-row"><span>14 Jun</span><div class="bar"><i style="width:71.8%"></i></div><strong>56</strong></div><div class="bar-row"><span>15 Jun</span><div class="bar"><i style="width:71.8%"></i></div><strong>56</strong></div><div class="bar-row"><span>16 Jun</span><div class="bar"><i style="width:73.1%"></i></div><strong>57</strong></div>
   </section>
 
